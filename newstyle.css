@@ -1,0 +1,59 @@
+body {
+	font-family: sans-serif;
+}
+
+[main] {
+	background-image: url('images/head_bg.png');
+}
+[drawer] {
+	background-color: #808284;
+} 
+/*ICON*/
+core-icon	{
+	color: #808284;
+}
+core-icon circle {
+	fill: #0b50bf;
+}
+core-icon circle:first-child {
+	fill: #66bbff;
+	}
+core-icon circle:last-child {
+	fill: #0083ff;
+}
+.icon-play {
+	color: lightgreen;
+}
+.icon-smaller	{
+	width: 20px; height: 20px;
+}
+.icon-larger	{
+	width:35px; height:35px;
+}
+/*Real Work*/
+
+.logo {
+  margin-bottom:33px;
+  margin-top:75px;
+}
+.what {
+  text-align:center;
+  margin:10px auto;
+  max-width:661px;
+  font-size:21pt;
+  color:#9ec83d;
+}
+.how {
+  text-align:center;
+  margin:10px auto;
+  max-width:512px;
+  font-size:12pt;
+  color:#808284;
+}
+.when {
+  text-align:center;
+  margin:10px auto;
+  max-width:661px;
+  font-size:26pt;
+  color:#808284;
+}
