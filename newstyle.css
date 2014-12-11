@@ -3,7 +3,9 @@
 body {
 	font-family: sans-serif;
 }
-
+core-toolbar  {
+  background-color: transparent;
+}
 [main] {
 	background-image: url('images/head_bg.png');
 }
@@ -38,8 +40,8 @@ core-icon circle:last-child {
 /*Real Work*/
 
 .logo {
-  margin-bottom:33px;
-  margin-top:75px;
+  margin-bottom:29px;
+  margin-top:19px;
 }
 .what {
   text-align:center;
