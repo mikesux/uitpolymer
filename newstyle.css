@@ -93,3 +93,9 @@ core-icon-button {
 .topic h3 {
   color:#9ec83d;
 }
+#features_bg {
+  /*height:393px;*/
+  background:url('images/features_bg.png') repeat;
+  background-position:top;
+  padding:30px;
+}
