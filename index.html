@@ -21,11 +21,11 @@
     <core-header-panel drawer>
       <core-toolbar></core-toolbar>
       <core-menu>
-        <core-item icon="settings" label="login"></core-item>
-        <core-item label="apply"></core-item>
-        <core-item label="about"></core-item>
-        <core-item label="contact"></core-item>
-        <core-item label="faq"></core-item>
+        <core-item icon="account-box" label="login"></core-item>
+        <core-item icon="assignment" label="apply"></core-item>
+        <core-item icon="info" label="about"></core-item>
+        <core-item icon="perm-phone-msg" label="contact"></core-item>
+        <core-item icon="help" label="faq"></core-item>
       </core-menu>
     </core-header-panel>
 
@@ -38,15 +38,12 @@
   
   <div class="content">
     <div class="container" layout vertical center>
-    <img class="logo" src="images/logo.png">
+    <img class="logo" src="images/UIT_LOGO.svg">
     
         <div class="when">Apply for September 2015</div>
         <div class="what">focused on developing startup founders</div>
   </div>
-    <!--<div class="container" layout vertical center>
-      <paper-input label="Email Address" floatingLabel></paper-input>
-      <paper-input label="Password" floatingLabel></paper-input>
-      <core-icon-button class="icon-larger" icon="android"></core-icon-button>
+
   </div>-->
 <div id="apply">
 <form class="form-inline" role="form" onsubmit="return apply();">
@@ -66,6 +63,23 @@
       </div>
     </div>
 </div>
+<div class="container-fluid" id="topics_bg">
+      <div class="topic">
+        <div id="technology_bg"></div>
+        <h3>Technology</h3>
+        <div class="desc">Learn code, design, database, and networking while recreating the technology behind some of the world's most successful startups.</div>
+      </div>
+      <div class="topic">
+        <div id="business_bg"></div>
+        <h3>Business</h3>
+        <div class="desc">How to pitch your idea, attract co-founders, raise money, recruit a team, and grow your company.</div>
+      </div>
+      <div class="topic">
+        <div id="product_bg"></div>
+        <h3>Product</h3>
+        <div class="desc">Follow lean startup methodologies like problem-solution fit, minimum viable product, and product/market fit.</div>
+      </div>
+    </div>
 
     </core-header-panel>
   </core-drawer-panel>
