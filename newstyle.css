@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: sans-serif;
 }
@@ -6,11 +8,14 @@ body {
 	background-image: url('images/head_bg.png');
 }
 [drawer] {
-	background-color: #808284;
+	background-color: transparent;
 } 
 /*ICON*/
+core-icon-button {
+  color: white;
+}
 core-icon	{
-	color: #808284;
+	color: #0b50bf;
 }
 core-icon circle {
 	fill: #0b50bf;
@@ -56,4 +61,22 @@ core-icon circle:last-child {
   max-width:661px;
   font-size:26pt;
   color:#808284;
+}
+/*APPLY*/
+#apply {
+  margin:20px auto 50px auto;
+  max-width:720px;
+  text-align:center;
+}
+#apply input {
+  min-width:270px;
+  height:50px;
+  margin:0px auto;
+}
+
+#apply .btn-default {
+  width:150px;
+  height:50px;
+  background:#9ec83d;
+  color:#ffffff;
 }
