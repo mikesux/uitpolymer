@@ -1,4 +1,4 @@
 polymer-testing
 ===============
 
-working with developing
+working with developing with polymer
