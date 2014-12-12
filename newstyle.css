@@ -23,6 +23,8 @@ core-toolbar  {
 
 [main] {
 	background-image: url('images/head_bg.png');
+  height: 100%
+  width: 100%;
 }
 
 [drawer] {
