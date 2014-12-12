@@ -1,4 +1,7 @@
-
+core-item {
+  color: #9ec83d;
+  font-size: 21pt;
+}
 core-toolbar  {
   background-color: transparent;
 }
