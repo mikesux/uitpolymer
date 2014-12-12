@@ -14,8 +14,10 @@ core-toolbar  {
 }
 
 [main] {
-	background-image: url('images/bg_repeating.png');
-  background-size: height 100%: width: 100%;
+	background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/head_bg.png');
 }
 
 [drawer] {
@@ -96,6 +98,7 @@ core-icon-button {
   /*height:393px;*/
   background:url('images/features_bg.png') repeat;
   background-position:top;
+  background-size: cover;
   padding:30px;
 }
 
@@ -117,11 +120,11 @@ paper-button[raised].colored {
   background: transparent;
   color: #808284;
   width: 130px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .input-submit {
-  width: 300px;
+  width: 210px;
 }
 
 .submit-form  {
@@ -130,7 +133,6 @@ paper-button[raised].colored {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-
 }
 
 /*main input form*/
