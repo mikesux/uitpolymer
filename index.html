@@ -5,9 +5,9 @@
     <title>UIT Startup Immersion</title>
     <meta name="description" content="Developing Startup Founders">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <!--<meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="import" href="elements.html">-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"
+      <link rel="import" href="elements.html">
       <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
       <script src="bower_components/webcomponents/webcomponents.min.js"></script>
       <link rel="import" href="custom-icons.html">
@@ -33,16 +33,29 @@
 
 <body fullbleed vertical layout unresolved touch-action="auto">
   <core-drawer-panel>
-    <core-header-panel mode="seamed" drawer>
+    <core-header-panel mode="seamed" drawer >
       <core-toolbar></core-toolbar>
         <core-menu>
         
-          <core-item icon="account-box" label="login" url="index.html"></core-item>
-          <core-item icon="assignment" label="apply" url="apply/apply.html"></core-item>
-          <core-item icon="info" label="about"></core-item>
-          <core-item icon="perm-phone-msg" label="contact"></core-item>
-          <core-item icon="help" label="faq"></core-item>
-          <core-item icon="help" label="help"></core-item>
+          <core-item icon="account-box" label="login" url="index.html">
+            <a href="apply/apply.html"></a>
+          </core-item>
+          <core-item icon="assignment" label="apply" url="apply/apply.html">
+            <a href="apply/apply.html"></a>
+          </core-item>
+          <core-item icon="info" label="about">
+            <a href="about.html"></a>
+          </core-item>
+          <core-item icon="perm-phone-msg" label="contact">
+            <a href="contact.html"></a>
+          </core-item>
+          <core-item icon="help" label="faq">
+            <a href="faq.html"></a>
+          </core-item>
+          <core-item icon="help" label="help">
+            <a href="http://uitstartup.desk.com/"></a>
+          </core-item>
+        
         </core-menu>
       </core-header-panel>
 
@@ -52,22 +65,22 @@
         </core-toolbar>
     
       <div class="content">
-        <div class="container" vertical layout center>
+        <div class="container" vertical layout center-justified>
           <img class="logo" src="images/logo.svg">
             <div class="when">Apply for September 2015</div>
             <div class="what">focused on developing startup founders</div>
         </div>
       </div>
       
-      <div horizontal layout center-justified style="height:175px"; "width:700px";>
+      <div horizontal layout center-justified style="height:200px"; "width:700px";>
         <div>
-          <paper-input-decorator flex class="custom" label="email address" floatingLabel>
-          <input type="email" id="email">
+          <paper-input-decorator class="custom" label="email address" floatingLabel>
+              <input type="email" id="email" is="core-input">
           </paper-input-decorator>
         </div>
         <div>
           <paper-input-decorator flex class="custom" label="password" floatingLabel>
-          <input type="password" id="pass">
+          <input type="password" id="pass" is="core-input">
           </paper-input-decorator>
         </div>
         <div>
@@ -77,10 +90,10 @@
         </div>
       </div>
 
-      
-
-
-<!--
+      <!--<p vertical layout center>
+      test
+      </p>
+      !!!!!!!!!!!!!!!!!!
       <div id="apply">
         <form class="form-inline" role="form" onsubmit="return apply();">
           <div id="apply_error" class="error"></div>

@@ -158,6 +158,13 @@ paper-input.narrow {
 /*input type color*/
     .custom {
       color: #0b9444;
-      font-size: 16pt;
+      font-size: 13pt;
     }
 
+
+p {
+  margin: 20px;
+  padding: 80px 40px;
+  border-radius: 250px;
+  background-color: #a7ce38;
+}
