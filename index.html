@@ -21,47 +21,68 @@
       <link rel="import" href="bower_components/core-icon/core-icon.html">
       <link rel="import" href="bower_components/core-icons/core-icons.html">
       <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
-      <link rel="import" href="bower_components/paper-input/paper-input.html">
       <link rel="import" href="bower_components/core-animation/core-animation.html">
       <link rel="import" href="bower_components/core-animation/core-animation-group.html">
+      <link rel="import" href="bower_components/paper-input/paper-input-decorator.html">
+      <link rel="import" href="bower_components/paper-input/paper-input.html">
+      <link rek="import" href="bower_components/paper-button/paper-button.html">
       <link rel="stylesheet" href="newstyle.css">
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 
 <body fullbleed vertical layout unresolved touch-action="auto">
-  
   <core-drawer-panel>
     <core-header-panel mode="seamed" drawer>
       <core-toolbar></core-toolbar>
-      <core-menu>
+        <core-menu>
         
-        <core-item icon="account-box" label="login" url="index.html"></core-item>
-        <core-item icon="assignment" label="apply" url="apply/apply.html"></core-item>
-        <core-item icon="info" label="about"></core-item>
-        <core-item icon="perm-phone-msg" label="contact"></core-item>
-        <core-item icon="help" label="faq" a href="apply/apply.html"></core-item>
-      
-      </core-menu>
-    </core-header-panel>
+          <core-item icon="account-box" label="login" url="index.html"></core-item>
+          <core-item icon="assignment" label="apply" url="apply/apply.html"></core-item>
+          <core-item icon="info" label="about"></core-item>
+          <core-item icon="perm-phone-msg" label="contact"></core-item>
+          <core-item icon="help" label="faq"></core-item>
+          <core-item icon="help" label="help"></core-item>
+        </core-menu>
+      </core-header-panel>
 
-    <core-header-panel mode="scroll" main>
-      <core-toolbar>
+      <core-header-panel mode="scroll" main>
+        <core-toolbar>
           <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
-      </core-toolbar>
+        </core-toolbar>
     
-  
-  <div class="content">
-    <div class="container" vertical layout center>
-    <img class="logo" src="images/logo.svg">
-    
-        <div class="when">Apply for September 2015</div>
-        <div class="what">focused on developing startup founders</div>
-  </div>
+      <div class="content">
+        <div class="container" vertical layout center>
+          <img class="logo" src="images/logo.svg">
+            <div class="when">Apply for September 2015</div>
+            <div class="what">focused on developing startup founders</div>
+        </div>
+      </div>
+      
+      <div horizontal layout center-justified style="height:175px"; "width:400px";>
+        <div>
+          <paper-input-decorator class="custom" label="email address" floatingLabel>
+          <input is="core-input">
+          </paper-input-decorator>
+        </div>
+        <div>
+          <paper-input-decorator class="custom" label="password" floatingLabel>
+          <input is="core-input">
+          </paper-input-decorator>
+        </div>
+        <div>
+          <paper-input-decorator class="custom" label="button later" floatingLabel>
+          <input is="core-input">
+          </paper-input-decorator>
+        </div>
+      </div>
 
-  </div>-->
-<div id="apply">
-<form class="form-inline" role="form" onsubmit="return apply();">
+      
+
+
+<!--
+      <div id="apply">
+        <form class="form-inline" role="form" onsubmit="return apply();">
           <div id="apply_error" class="error"></div>
           <div class="form-group">
             <label class="sr-only" for="email">Email Address</label>
@@ -73,11 +94,8 @@
           </div>
           <button type="submit" class="btn btn-default">APPLY</button>
         </form>
-      
-
       </div>
-    </div>
-</div>
+-->
 
 <div class="container-fluid" id="topics_bg">
       <div class="topic">
@@ -132,7 +150,6 @@
     </div>
 </core-header-panel>
   </core-drawer-panel>
- 
 
 
 

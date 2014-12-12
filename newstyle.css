@@ -98,3 +98,65 @@ core-icon-button {
   background-position:top;
   padding:30px;
 }
+
+
+/*INPUT*/
+paper-input {
+  width: 80%;
+}
+
+paper-input-decorator {
+  max-width: 80%;
+}
+
+paper-input.narrow {
+  width: 150px;
+}
+/*main input form*/
+.custom /deep/ ::-webkit-input-placeholder {
+      color: ##808284;
+    }
+
+    .custom /deep/ ::-moz-placeholder {
+      color: ##808284;
+    }
+
+    .custom /deep/ :-ms-input-placeholder {
+      color: ##808284;
+    }
+
+    .custom /deep/ .label-text,
+    .custom /deep/ .error {
+      color: #a7ce38;
+    }
+
+    .custom /deep/ .unfocused-underline {
+      background-color: #0b9444;
+    }
+
+    .custom[focused] /deep/ .floated-label .label-text {
+      color: #808284;
+    }
+/*underline once clicked*/
+    .custom /deep/ .focused-underline {
+      background-color: #a7ce38;
+    }
+
+    .custom /deep/ .cursor {
+      background-color: #a7ce38;
+    }
+
+    .custom.invalid /deep/ .floated-label .label-text,
+    .custom /deep/ .error {
+      color: #a7ce38;
+    }
+
+    .custom.invalid /deep/ .focused-underline,
+    .custom.invalid /deep/ .cursor {
+      background-color: ##a7ce38;
+    }
+/*input type color*/
+    .custom {
+      color: #0b9444;
+    }
+
