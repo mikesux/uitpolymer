@@ -17,19 +17,15 @@ core-icon-button {
 }
 /*Logo Section*/
 .logo {
-  margin-bottom:29px;
+  margin-bottom:25px;
   margin-top:19px;
 }
 .when {
-  text-align:center;
-  margin:09px auto;
   max-width:661px;
   font-size:26pt;
   color:#808284;
 }
 .what {
-  text-align:center;
-  margin:10px auto;
   max-width:661px;
   font-size:21pt;
   color:#9ec83d;
