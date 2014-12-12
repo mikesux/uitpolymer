@@ -31,12 +31,13 @@
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<core-media-query query="max-width:600px" queryMatches="{{phoneScreen}}"></core-media-query>
-
-<body fullbleed vertical layout unresolved touch-action="auto">
+<body fullbleed vertical layout unresolved>
+  
   <core-drawer-panel>
+    
     <!--Menu on the left-->
-    <core-header-panel mode="seamed" drawer >
+    
+    <core-header-panel mode="seamed" drawer>
       <core-toolbar></core-toolbar>
         <core-menu>
           <core-item icon="account-box" label="login" url="index.html">
@@ -64,17 +65,23 @@
     </core-header-panel>
 
     <core-header-panel mode="scroll" main>
+      
       <!--Hamburger Menu Top Left CoreToolbar-->
+      
       <core-toolbar>
         <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
       </core-toolbar>
-      <!--Logo and Center Content-->
+        
+        <!--Logo and Center Content-->
+      
       <div vertical layout center>
         <img class="logo" src="images/logo.svg">
           <div class="when">Apply for September 2015</div>
           <div class="what">focused on developing startup founders</div>
       </div>
+      
       <!--Submission form-->
+      
       <div class="submit-form" horizontal layout>
         <div class="input-submit">
           <paper-input-decorator class="custom" label="email address" floatingLabel>
@@ -90,6 +97,14 @@
             <paper-button raised class-"bottom" class="colored">Apply</paper-button>
         </div>
       </div>
+
+
+
+
+
+
+
+
 
 <div class="container-fluid" id="topics_bg">
       <div class="topic">
