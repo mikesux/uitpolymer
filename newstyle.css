@@ -21,13 +21,15 @@ core-icon-button {
   margin-top:19px;
 }
 .when {
+  text-align:center;
   max-width:661px;
   font-size:26pt;
   color:#808284;
 }
 .what {
+  text-align:center;
   max-width:661px;
-  font-size:21pt;
+  font-size:26pt;
   color:#9ec83d;
 }
 /*APPLY*/
