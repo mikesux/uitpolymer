@@ -1,6 +1,6 @@
 core-item {
-  color: #0b9444;
-  font-size: 19pt;
+  color: #f6fef3;
+  font-size: 21pt;
 }
 core-toolbar  {
   background-color: transparent;
@@ -11,18 +11,17 @@ core-toolbar  {
 [drawer] {
 	background-color: transparent;
 } 
-/*ICON*/
+/*Menu Icon*/
 core-icon-button {
   color: #2f3f41;
 }
-/*Real Work*/
+/*Logo Section*/
 .logo {
   margin-bottom:29px;
   margin-top:19px;
 }
 .when {
-  text-align:center;
-  margin:10px auto;
+  margin:09px auto;
   max-width:661px;
   font-size:26pt;
   color:#808284;
@@ -45,7 +44,6 @@ core-icon-button {
   height:50px;
   margin:0px auto;
 }
-
 #apply .btn-default {
   width:150px;
   height:50px;
@@ -61,7 +59,6 @@ core-icon-button {
   padding-top:70px;
   padding-bottom:10px;
 }
-
 .topic {
   text-align:center;
   max-width:320px; height:200px;
@@ -70,25 +67,21 @@ core-icon-button {
   margin-left:40px;
   margin-bottom:40px;
 }
-
 #technology_bg {
   margin:0px auto;
   width:124px; height:72px;
   background:url('images/cloud.png') no-repeat;
 }
-
 #business_bg {
   margin:0px auto;
   width:92px; height:80px;
   background:url('images/team.png') no-repeat;
 }
-
 #product_bg {
   margin:0px auto;
   width:92px; height:86px;
   background:url('images/product.png') no-repeat;
 }
-
 .topic h3 {
   color:#9ec83d;
 }
@@ -98,68 +91,56 @@ core-icon-button {
   background-position:top;
   padding:30px;
 }
-
-
 /*INPUT*/
 paper-input {
   width: 80%;
 }
-
 paper-input-decorator {
   max-width: 80%;
 }
-
 paper-input.narrow {
   width: 150px;
 }
 /*main input form*/
 .custom /deep/ ::-webkit-input-placeholder {
-      color: ##808284;
-    }
-
-    .custom /deep/ ::-moz-placeholder {
-      color: ##808284;
-    }
-
-    .custom /deep/ :-ms-input-placeholder {
-      color: ##808284;
-    }
-
-    .custom /deep/ .label-text,
-    .custom /deep/ .error {
-      color: #a7ce38;
-    }
-
-    .custom /deep/ .unfocused-underline {
-      background-color: #0b9444;
-    }
-
-    .custom[focused] /deep/ .floated-label .label-text {
-      color: #808284;
-    }
+  color: ##808284;
+}
+.custom /deep/ ::-moz-placeholder {
+  color: ##808284;
+}
+.custom /deep/ :-ms-input-placeholder {
+  color: ##808284;
+}
+.custom /deep/ .label-text,
+.custom /deep/ .error {
+  color: #a7ce38;
+}
+.custom /deep/ .unfocused-underline {
+  background-color: #0b9444;
+}
+.custom[focused] /deep/ .floated-label .label-text {
+  color: #808284;
+}
 /*underline once clicked*/
-    .custom /deep/ .focused-underline {
-      background-color: #a7ce38;
-    }
-
-    .custom /deep/ .cursor {
-      background-color: #a7ce38;
-    }
-
-    .custom.invalid /deep/ .floated-label .label-text,
-    .custom /deep/ .error {
-      color: #a7ce38;
-    }
-
-    .custom.invalid /deep/ .focused-underline,
-    .custom.invalid /deep/ .cursor {
-      background-color: ##a7ce38;
-    }
+.custom /deep/ .focused-underline {
+  background-color: #a7ce38;
+}
+.custom /deep/ .cursor {
+  background-color: #a7ce38;
+}
+.custom.invalid /deep/ .floated-label .label-text,
+.custom /deep/ .error {
+  color: #a7ce38;
+}
+.custom.invalid /deep/ .focused-underline,
+.custom.invalid /deep/ .cursor {
+  background-color: ##a7ce38;
+}
 /*input type color*/
-    .custom {
-      color: #0b9444;
-      font-size: 13pt;
-    }
+.custom {
+  color: #0b9444;
+  font-size: 13pt;
+}
 
 
 p {
