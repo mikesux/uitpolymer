@@ -1,4 +1,4 @@
-* {
+body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -14,7 +14,8 @@ core-toolbar  {
 }
 
 [main] {
-	background-image: url('images/head_bg.png');
+	background-image: url('images/bg_repeating.png');
+  background-size: height 100%: width: 100%;
 }
 
 [drawer] {
@@ -35,6 +36,7 @@ core-icon-button {
 }
 
 .when {
+  font-family: 'Open Sans' sans-serif;
   text-align:center;
   max-width:661px;
   font-size:26pt;
@@ -115,6 +117,7 @@ paper-button[raised].colored {
   background: transparent;
   color: #808284;
   width: 130px;
+  font-size: 20px;
 }
 
 .input-submit {
@@ -122,11 +125,12 @@ paper-button[raised].colored {
 }
 
 .submit-form  {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  display: flex;
+
 }
 
 /*main input form*/
