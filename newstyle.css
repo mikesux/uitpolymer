@@ -2,7 +2,15 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-
+.input-submit {
+  width: 300px;
+}
+.submit-form  {
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+}
 /*Polymer Scaffold*/
 core-item {
   color: #f6fef3;
@@ -114,6 +122,7 @@ paper-input.narrow {
 paper-button[raised].colored {
   background: #4285f4;
   color: #fff;
+  width: 130px;
 }
 
 
@@ -145,7 +154,6 @@ paper-button[raised].colored {
 }
 
 /*underline once clicked*/
-
 .custom /deep/ .focused-underline {
   background-color: #a7ce38;
 }
@@ -165,7 +173,6 @@ paper-button[raised].colored {
 }
 
 /*input type color*/
-
 .custom {
   color: #0b9444;
   font-size: 13pt;

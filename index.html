@@ -30,8 +30,8 @@
             <link rel="stylesheet" href="newstyle.css">
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<core-media-query query="max-width:640px"
-                  queryMatches="{{phoneScreen}}"></core-media-query>
+
+<core-media-query query="max-width:600px" queryMatches="{{phoneScreen}}"></core-media-query>
 
 <body fullbleed vertical layout unresolved touch-action="auto">
   <core-drawer-panel>
@@ -75,19 +75,19 @@
           <div class="what">focused on developing startup founders</div>
       </div>
       <!--Submission form-->
-      <div class="submit" horizontal layout center layout vertical?="{{phoneScreen}}" horizontal?="{{phoneScreen}}">
-        <div auto-vertical flex self-center>
+      <div class="submit-form" horizontal layout>
+        <div class="input-submit">
           <paper-input-decorator class="custom" label="email address" floatingLabel>
             <input type="email" id="email" is="core-input">
           </paper-input-decorator>
         </div>
-        <div auto-vertical flex self-center>
+        <div class="input-submit">
           <paper-input-decorator class="custom" label="password" floatingLabel>
             <input type="password" id="pass" is="core-input">
           </paper-input-decorator>
         </div>
-        <div auto-vertical flex self-center>
-            <paper-button flex raised class-"bottom" class="colored">colored</paper-button>
+        <div>
+            <paper-button raised class-"bottom" class="colored">Apply</paper-button>
         </div>
       </div>
 
