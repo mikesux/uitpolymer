@@ -32,23 +32,6 @@ core-icon-button {
   font-size:26pt;
   color:#9ec83d;
 }
-/*APPLY*/
-#apply {
-  margin:20px auto 50px auto;
-  max-width:720px;
-  text-align:center;
-}
-#apply input {
-  min-width:270px;
-  height:50px;
-  margin:0px auto;
-}
-#apply .btn-default {
-  width:150px;
-  height:50px;
-  background:#9ec83d;
-  color:#ffffff;
-}
 /*topics_bg*/
 #topics_bg {
   /*height:336px;*/
