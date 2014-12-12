@@ -32,6 +32,7 @@
 
 <body fullbleed vertical layout unresolved touch-action="auto">
   <core-drawer-panel>
+    <!--Menu on the left-->
     <core-header-panel mode="seamed" drawer >
       <core-toolbar></core-toolbar>
         <core-menu>
@@ -60,31 +61,30 @@
     </core-header-panel>
 
     <core-header-panel mode="scroll" main>
-        <core-toolbar>
-          <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
-        </core-toolbar>
-    
+      <!--Hamburger Menu Top Left CoreToolbar-->
+      <core-toolbar>
+        <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+      </core-toolbar>
+      <!--Logo and Center Content-->
       <div vertical layout center>
         <img class="logo" src="images/logo.svg">
           <div class="when">Apply for September 2015</div>
           <div class="what">focused on developing startup founders</div>
       </div>
-      
+      <!--Submission form-->
       <div horizontal layout center-justified style="height:200px"; "width:700px";>
         <div>
           <paper-input-decorator class="custom" label="email address" floatingLabel>
-              <input type="email" id="email" is="core-input">
+            <input type="email" id="email" is="core-input">
           </paper-input-decorator>
         </div>
         <div>
           <paper-input-decorator flex class="custom" label="password" floatingLabel>
-          <input type="password" id="pass" is="core-input">
+            <input type="password" id="pass" is="core-input">
           </paper-input-decorator>
         </div>
         <div>
-          <paper-input-decorator flex class="custom" label="button later" floatingLabel>
-          <input is="core-input">
-          </paper-input-decorator>
+          
         </div>
       </div>
 
