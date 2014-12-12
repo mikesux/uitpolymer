@@ -102,12 +102,20 @@ core-icon-button {
 paper-input {
   width: 80%;
 }
+
 paper-input-decorator {
   max-width: 80%;
 }
+
 paper-input.narrow {
   width: 150px;
 }
+
+paper-button[raised].colored {
+  background: #4285f4;
+  color: #fff;
+}
+
 
 /*main input form*/
 
@@ -162,12 +170,6 @@ paper-input.narrow {
   color: #0b9444;
   font-size: 13pt;
 }
-
-paper-button[raised].colored {
-  background: #4285f4;
-  color: #fff;
-}
-
 
 p {
   margin: 20px;
