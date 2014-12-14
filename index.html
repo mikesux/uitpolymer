@@ -7,7 +7,7 @@
     <title>UIT Startup Immersion</title>
       
       <meta name="description" content="Developing Startup Founders">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-capable" content="yes">
         
@@ -27,7 +27,7 @@
           <link rel="import" href="bower_components/paper-input/paper-input-decorator.html">
           <link rel="import" href="bower_components/paper-input/paper-input.html">
           <link rel="import" href="bower_components/paper-button/paper-button.html">
-            
+          <link rel="import" href="bower_components/core-media-query/core-media-query.html">
             <link rel="stylesheet" href="newstyle.css">
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -81,24 +81,48 @@
           <div class="what">focused on developing startup founders</div>
       </div>
       
-      <!--Submission form-->
-      
-      <div class="submit-form" horizontal layout>
+      <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
+        <div class="submit-form" layout vertical center?="{{phoneScreen}}" layout horizontal center?="{{!phoneScreen}}">
+        <div class="input-submit" auto-horizontal>
+          <paper-input-decorator class="custom" label="email address" floatingLabel>
+            <input type="email" id="email" is="core-input">
+          </paper-input-decorator>
+        </div>
+        <div class="input-submit" auto-horizontal>
+          <paper-input-decorator class="custom" label="password" floatingLabel>
+            <input type="password" id="pass" is="core-input">
+          </paper-input-decorator>
+        </div>
+        <div auto-horizontal>
+            <paper-button raised class-"bottom" class="colored">Apply</paper-button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!--<!--Submission form
+      <core-media-query query="max-width: 600px">
+      <div id="submit-form">
         <div class="input-submit">
           <paper-input-decorator class="custom" label="email address" floatingLabel>
             <input type="email" id="email" is="core-input">
           </paper-input-decorator>
         </div>
-        <div class="input-submit">
+        <div class="input-submit" auto-vertical>
           <paper-input-decorator class="custom" label="password" floatingLabel>
             <input type="password" id="pass" is="core-input">
           </paper-input-decorator>
         </div>
-        <div>
+        <div auto-vertical>
             <paper-button raised class-"bottom" class="colored">Apply</paper-button>
         </div>
       </div>
-
+      </vertical-content>
+-->
 
 
 
