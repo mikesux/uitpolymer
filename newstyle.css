@@ -1,5 +1,6 @@
 body {
-  font-family: 'Ubuntu:300': sans-serif;
+  font-family: 'Ubuntu': sans-serif;
+  font-weight: 300;
   margin: 0;
   position: absolute;
   width: 100%;
@@ -40,7 +41,7 @@ core-icon-button {
 /*Logo Section*/
 
 .logo {
-  margin-bottom:25px;
+  margin-bottom:20px;
   margin-top:1px;
 }
 
@@ -132,6 +133,8 @@ paper-button[raised].colored {
   opacity:0.7;
   color: #f6fef3;
   width: 180px;
+  font-family: 'Ubuntu': sans-serif;
+  font-weight: 400;
   font-size: 17px;
   margin-left: 9px;
   margin-top: 9px;

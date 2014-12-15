@@ -30,7 +30,7 @@
             
             <link rel="stylesheet" href="newstyle.css">
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-            <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -87,7 +87,7 @@
     <template is="auto-binding">
       <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
         
-        <div class="submit-form" layout center vertical?="{{phoneScreen}}" center horizontal?="{{!phoneScreen}}">
+        <div class="submit-form" layout flex center vertical?="{{phoneScreen}}" flex center horizontal?="{{!phoneScreen}}">
         
         <div class="input-submit" center auto-vertical>
           <paper-input-decorator class="custom" label="email address" floatingLabel>
