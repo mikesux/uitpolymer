@@ -1,6 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Ubuntu:300': sans-serif;
   margin: 0;
   position: absolute;
   width: 100%;
@@ -9,9 +8,12 @@ body {
 
 
 /*Polymer Scaffold*/
+
 core-item {
   color: #f6fef3;
   font-size: 21pt;
+  font-family: 'Ubuntu': sans-serif;
+  font-weight: 400;
 }
 
 core-toolbar  {
@@ -43,7 +45,8 @@ core-icon-button {
 }
 
 .when {
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Ubuntu': sans-serif;
+  font-weight: 400;
   text-align:center;
   max-width:661px;
   font-size:26pt;
@@ -51,6 +54,8 @@ core-icon-button {
 }
 
 .what {
+  font-family:'Ubuntu': sans-serif;
+  font-weight: 300;
   text-align:center;
   max-width:661px;
   font-size:26pt;
@@ -63,6 +68,7 @@ core-icon-button {
   /*height:336px;*/
   background:#2f3f41;
   color:#ffffff;
+  opacity: 0.8;
   text-align:center;
   padding-top:70px;
   padding-bottom:10px;
@@ -128,6 +134,7 @@ paper-button[raised].colored {
   width: 180px;
   font-size: 17px;
   margin-left: 9px;
+  margin-top: 9px;
 }
 
 .input-submit {
