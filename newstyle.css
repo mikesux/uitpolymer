@@ -148,7 +148,8 @@ paper-button[raised].colored {
 .submit-form  {
   margin-bottom: 35px;
   margin-top: 10px;
-  justify-content:center;
+  text-align: center;
+  justify-content: center;
   align-items: center;
   border-radius: 5px;
 }
