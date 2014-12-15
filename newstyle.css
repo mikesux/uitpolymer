@@ -10,6 +10,7 @@ body {
 
 /*Polymer Scaffold*/
 
+
 core-item {
   color: #f6fef3;
   font-size: 21pt;
@@ -29,7 +30,7 @@ core-toolbar  {
 }
 
 [drawer] {
-	background-color: transparent;
+  background-image: url('images/bg_repeating.png');
 } 
 
 /*Menu Icon*/
@@ -57,7 +58,7 @@ core-icon-button {
 .what {
   font-family:'Ubuntu', sans-serif;
   font-weight: 300;
-  
+  margin-top:9px;
   text-align:center;
   max-width:661px;
   font-size:26pt;
@@ -105,7 +106,6 @@ core-icon-button {
 /*INPUT*/
 
 paper-input {
-  
   width: 95%;
 }
 
@@ -199,11 +199,70 @@ paper-button[raised].bubble-float-left {
   border-radius: 250px;
   background-color: #a7ce38;
 }
+/*Footer*/
+.footer {
+  background:#2f3f41;
+}
 
+#footer {
+  color:#ffffff;
+  background:#2f3f41;
+  padding-top:30px;
+  padding-bottom:10px;
+}
 
+#footer #copyright {
+  float:left;
+  width:250px;
+}
 
+#footer #social_icons {
+  float:right;
+  text-align:right;
+  width:100px;
+  margin-top:-10px;
+}
 
+/*Newsletter*/
+#when {
+  text-align:center;
+  margin:10px auto;
+  max-width:661px;
+  font-size:26pt;
+  color:#808284;
+}
 
+#newsletter_bg {
+  min-height:241px;
+  background:url('images/head_bg.png') repeat;
+  background-position:50% 80%;
+}
+
+#newsletter {
+  margin:0px auto;
+  text-align:center;
+  max-width:626px;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+#newsletter h2 {
+  font-size:21pt;
+  color:#2f3f41;
+  margin-bottom:30px;
+}
+
+#newsletter input {
+  height:50px;
+  border:1px solid #c4c4c4;
+}
+
+#newsletter .btn-default {
+  width:180px;
+  height:50px;
+  background:#9fcb3e;
+  color:#ffffff;
+}
 
 
 
