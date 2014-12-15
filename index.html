@@ -43,25 +43,25 @@
     <core-header-panel center mode="seamed" drawer>
       <core-toolbar></core-toolbar>
         <core-menu>
-          <core-item icon="account-box" label="login" url="index.html">
+          <core-item class="grow" icon="account-box" label="login" url="index.html">
             <a href="login/index.html"></a>
           </core-item>
-          <core-item icon="assignment" label="apply" url="apply/apply.html">
+          <core-item class="grow" icon="assignment" label="apply" url="apply/apply.html">
             <a href="apply/index.html"></a>
           </core-item>
-          <core-item icon="info" label="about">
+          <core-item class="grow" icon="info" label="about">
             <a href="about/index.html"></a>
           </core-item>
-          <core-item icon="perm-phone-msg" label="contact">
+          <core-item class="grow" icon="perm-phone-msg" label="contact">
             <a href="contact/index.html"></a>
           </core-item>
-          <core-item icon="help" label="faq">
+          <core-item class="grow" icon="help" label="faq">
             <a href="faq/index.html"></a>
           </core-item>
-          <core-item icon="accessibility" label="help">
+          <core-item class="grow" icon="accessibility" label="help">
             <a href="http://uitstartup.desk.com/"></a>
           </core-item>
-          <core-item icon="face-unlock" label="blog">
+          <core-item class="grow" icon="face-unlock" label="blog">
             <a href="https://www.youtube.com/watch?v=mXRT2YH8EDM"></a>
           </core-item>
         </core-menu>
@@ -86,51 +86,26 @@
         <!--Submit Form-->
     <template is="auto-binding">
       <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
-        
         <div class="submit-form" layout center vertical?="{{phoneScreen}}" center horizontal?="{{!phoneScreen}}">
-        
-        <div class="input-submit" center auto-vertical>
-          <paper-input-decorator class="custom" label="email address" floatingLabel>
-            <input type="email">
-          </paper-input-decorator>
+          <div class="input-submit" center auto-vertical>
+            <paper-input-decorator class="custom" label="email address" floatingLabel>
+              <input type="email" id="email" is="core-input">
+            </paper-input-decorator>
+          </div>
+          <div class="input-submit" center auto-vertical>
+            <paper-input-decorator class="custom" label="password" floatingLabel>
+              <input type="password" id="pass" is="core-input">
+            </paper-input-decorator>
+          </div>
+          <div auto-vertical>
+            <paper-button raised class="button bubble-float-left">Apply</paper-button>
+          </div>
         </div>
-        
-        <div class="input-submit" center auto-vertical>
-          <paper-input-decorator class="custom" label="password" floatingLabel>
-            <input type="password">
-          </paper-input-decorator>
-        </div>
-        
-        <div auto-vertical>
-            <paper-button raised class="colored">Apply</paper-button>
-        </div>
-      
-      </div>
     </template>
 
 
 
 
-
-      <!--Submission form
-      <core-media-query query="max-width: 600px">
-      <div id="submit-form">
-        <div class="input-submit">
-          <paper-input-decorator class="custom" label="email address" floatingLabel>
-            <input type="email" id="email" is="core-input">
-          </paper-input-decorator>
-        </div>
-        <div class="input-submit" auto-vertical>
-          <paper-input-decorator class="custom" label="password" floatingLabel>
-            <input type="password" id="pass" is="core-input">
-          </paper-input-decorator>
-        </div>
-        <div auto-vertical>
-            <paper-button raised class-"bottom" class="colored">Apply</paper-button>
-        </div>
-      </div>
-      </vertical-content>
--->
 
 
 
@@ -141,14 +116,19 @@
 
 <div class="container-fluid" id="topics_bg">
       <div class="topic">
+        <paper-shadow z="1">
         <div id="technology_bg"></div>
         <h3>Technology</h3>
+        
         <div class="desc">Learn code, design, database, and networking while recreating the technology behind some of the world's most successful startups.</div>
+        </paper-shadow>
       </div>
       <div class="topic">
         <div id="business_bg"></div>
+        <paper-shadow z="1">
         <h3>Business</h3>
         <div class="desc">How to pitch your idea, attract co-founders, raise money, recruit a team, and grow your company. More info for the content to line up.</div>
+        </paper-shadow>
       </div>
       <div class="topic">
         <div id="product_bg"></div>
