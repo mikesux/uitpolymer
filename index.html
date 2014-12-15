@@ -87,7 +87,7 @@
     <template is="auto-binding">
       <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
         
-        <div class="submit-form" layout flex center vertical?="{{phoneScreen}}" flex center horizontal?="{{!phoneScreen}}">
+        <div class="submit-form" layout center vertical?="{{phoneScreen}}" center horizontal?="{{!phoneScreen}}">
         
         <div class="input-submit" center auto-vertical>
           <paper-input-decorator class="custom" label="email address" floatingLabel>
@@ -101,7 +101,7 @@
           </paper-input-decorator>
         </div>
         
-        <div center auto-vertical>
+        <div auto-vertical>
             <paper-button raised class="colored">Apply</paper-button>
         </div>
       

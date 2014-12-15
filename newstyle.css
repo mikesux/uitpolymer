@@ -130,11 +130,11 @@ paper-input.narrow {
 
 paper-button[raised].colored {
   background-color:#9ec83d;
-  opacity:0.7;
+  opacity:0.65;
   color: #f6fef3;
   width: 180px;
   font-family: 'Ubuntu': sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 17px;
   margin-left: 9px;
   margin-top: 9px;
@@ -148,10 +148,8 @@ paper-button[raised].colored {
 .submit-form  {
   margin-bottom: 35px;
   margin-top: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  justify-content:center;
+  align-items:center;
 }
 
 /*main input form*/
