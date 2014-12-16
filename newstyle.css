@@ -91,16 +91,27 @@ core-icon-button {
   font-size:22px;
 }
 
+.feature {
+  max-width: 310px;
+  display:inline-block;
+  margin: 20px;
+}
+
 #features_bg {
-  background:url('images/features_bg.png') no-repeat;
+  background:url('images/features_bg.png');
+  color:#ffffff;
+  opacity: 0.8;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
   background-position:top;
-  background-size: cover;
-  padding:30px;
 }
 
 .desc {
   font-family: 'Ubuntu', sans-serif;
+  text-align: left;
   font-weight: 300;
+  color: #f6fef3;
 }
 
 /*INPUT*/
