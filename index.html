@@ -85,24 +85,22 @@
       </div>
         
         <!--Submit Form-->
-    <template is="auto-binding">
-      <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
-        <div class="submit-form" layout center vertical?="{{phoneScreen}}" center horizontal?="{{!phoneScreen}}">
-          <div class="input-submit" center auto-vertical>
-            <paper-input-decorator class="custom" label="email address" floatingLabel>
-              <input type="email" id="email" is="core-input">
-            </paper-input-decorator>
+      <a name="apply"></a>
+      <div id="apply">
+        <form class="form-inline" role="form" onsubmit="return apply();">
+          <div id="apply_error" class="error"></div>
+          <div class="form-group">
+            <label class="sr-only" for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" required placeholder="Email Address">
           </div>
-          <div class="input-submit" center auto-vertical>
-            <paper-input-decorator class="custom" label="password" floatingLabel>
-              <input type="password" id="pass" is="core-input">
-            </paper-input-decorator>
+          <div class="form-group">
+            <label class="sr-only" for="pass">Password</label>
+            <input type="password" class="form-control" id="pass" required placeholder="Password">
           </div>
-          <div auto-vertical>
-            <paper-button raised class="button bubble-float-left">Apply</paper-button>
-          </div>
-        </div>
-    </template>
+          <button type="submit" class="btn btn-default">APPLY</button>
+        </form>
+      </div>
+    </div>
 
         <!--Three Topics on Grey-->
 <div class="container-fluid" id="topics_bg">
