@@ -134,102 +134,7 @@ core-icon-button {
   color: #f6fef3;
 }
 
-/*INPUT*/
 
-paper-input {
-  width: 95%;
-}
-
-paper-input-decorator {
-  max-width: 95%;
-}
-
-paper-input.narrow {
-  width: 200px;
-}
-
-paper-button[raised].bubble-float-left {
-  background-color:#9ec83d;
-  opacity:0.65;
-  color: #f6fef3;
-  width: 180px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  font-size: 17px;
-  margin-left: 9px;
-  margin-top: 9px;
-}
-
-.input-submit {
-  width: 225px;
-  margin-left: 10px;
-}
-
-.submit-form  {
-  margin-bottom: 35px;
-  margin-top: 10px;
-  justify-content:center;
-  align-items:center;
-}
-
-/*main input form*/
-
-.custom /deep/ ::-webkit-input-placeholder {
-  color: ##808284;
-}
-
-.custom /deep/ ::-moz-placeholder {
-  color: ##808284;
-}
-
-.custom /deep/ :-ms-input-placeholder {
-  color: ##808284;
-}
-
-.custom /deep/ .label-text,
-.custom /deep/ .error {
-  color: #a7ce38;
-}
-
-.custom /deep/ .unfocused-underline {
-  background-color: #0b9444;
-}
-
-.custom[focused] /deep/ .floated-label .label-text {
-  color: #808284;
-}
-
-/*underline once clicked*/
-.custom /deep/ .focused-underline {
-  background-color: #a7ce38;
-}
-
-.custom /deep/ .cursor {
-  background-color: #a7ce38;
-}
-
-.custom.invalid /deep/ .floated-label .label-text,
-.custom /deep/ .error {
-  color: #a7ce38;
-}
-
-.custom.invalid /deep/ .focused-underline,
-.custom.invalid /deep/ .cursor {
-  background-color: ##a7ce38;
-}
-
-/*input type color*/
-.custom {
-  color: #0b9444;
-  font-size: 13pt;
-}
-
-.topics {
-  margin: 20px;
-  padding: 80px 40px;
-  border-radius: 250px;
-  background-color: #a7ce38;
-}
 /*Footer*/
 .footer {
   background:#2f3f41;
@@ -297,45 +202,8 @@ paper-button[raised].bubble-float-left {
 
 
 
-/*Hover Responsiveness*/
-/* Bubble Float Left */
 
-.bubble-float-left {
-  display: inline-block;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.bubble-float-left:before {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: calc(50% - 10px);
-  left: 0;
-  border-style: solid;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #9ec83d transparent transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: left;
-  transition-property: left;
-}
-
-.bubble-float-left:hover, .bubble-float-left:focus, .bubble-float-left:active {
-  -webkit-transform: translateX(5px);
-  transform: translateX(5px);
-}
-
-.bubble-float-left:hover:before, .bubble-float-left:focus:before, .bubble-float-left:active:before {
-  left: -10px;
-}
-
+/*HOVER*/
 /*GROW*/
 .grow {
   display: inline-block;
@@ -351,3 +219,99 @@ paper-button[raised].bubble-float-left {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/*  CSS Media Queries
+================================================== */
+
+
+/* Version 1024px ----------------------------------------------------*/
+@media handheld, only screen and (max-width: 1024px) {
+
+}
+
+
+/* Mobile Version 767px ----------------------------------------------*/
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    padding:0;
+  }
+  nav{
+    text-align: center;
+  }
+  nav h1{
+    text-align: center;
+  }
+  .info, .extra{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+
+/* Mobile Version 600px ----------------------------------------------*/
+@media handheld, only screen and (max-width: 600px) {
+  body {
+    padding:0;
+  }
+  nav {
+    text-align: center;
+  }
+}
+
+
+/* Mobile Version 568px ----------------------------------------------*/
+@media handheld, only screen and (max-width: 568px) {
+  body {
+    padding:0;
+  }
+  nav{
+    text-align: center;
+  }
+  .form .row1, .form .row2, .form .row3, .form .row4 {
+       width: 100%;
+  }
+
+
+  .newsletter input {
+  margin: 0 auto 20px auto;
+    width: 90%;
+    padding: 4px 5px;
+    height: 45px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+
+}
+
+
+/* Mobile Version 480px ----------------------------------------------*/
+@media handheld, only screen and (max-width: 480px) {
+  body {
+    padding:0;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .form .row1, .form .row2, .form .row3, .form .row4 {
+       width: 100%;
+  }
+
+}
+
+
+/* Mobile Version 320px ----------------------------------------------*/
+@media handheld, only screen and (max-width: 320px) {
+  body {
+    padding:0;
+  }
+  nav {
+    text-align: center;
+  }
+
+}
+

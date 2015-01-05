@@ -23,14 +23,9 @@
           <link rel="import" href="bower_components/core-icon/core-icon.html">
           <link rel="import" href="bower_components/core-icons/core-icons.html">
           <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
-          <link rel="import" href="bower_components/paper-input/paper-input-decorator.html">
-          <link rel="import" href="bower_components/paper-input/paper-input.html">
-          <link rel="import" href="bower_components/paper-button/paper-button.html">
-          <link rel="import" href="bower_components/core-media-query/core-media-query.html">
             
-            <link rel="stylesheet" href="newstyle.css">
-            <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet" type="text/css">
-           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
             
 
 </head>
@@ -78,10 +73,13 @@
         
         <!--Logo and Center Content-->
       
-      <div vertical layout center flex>
-        <img class="logo" src="images/logo.svg">
-          <div class="when">Apply for September 2015</div>
-          <div class="what">focused on developing startup founders</div>
+
+
+      <img id="logo" alt="UIT Startup Immersion" src="images/logo.svg" class="img-responsive center-block">
+      <div id="description">
+       
+          <div id="when">Apply for September 2015</div>
+          <div id="what">focused on developing startup founders</div>
       </div>
         
         <!--Submit Form-->
@@ -122,51 +120,53 @@
     </div>
 
 
-    <div class="container-fluid" id="features_bg">
-      
+        <div class="container-fluid" id="features_bg">
       <div class="feature">
-        <core-item icon="developer-mode-tv" label="Mentor Supported"></core-item>
-        <div class="desc">Be introduced to experts and start building a lifelong network of industry contacts.</div>
-      </div>
-      
-      <div class="feature">
-        <div><core-item icon="work" label="Project Driven"></core-item></div>
-        <div class="desc">No tests and no exams. You are judged on the quality of the apps you build.</div>
-      </div>
-      
-      <div class="feature">
-        <div><core-item icon="shopping-cart" label="University Affiliated"></core-item></div>
-        <div class="desc">You'll receive credit from the Shannon School of Business at Cape Breton University.</div>
-      
-      </div>
-
-      <div class="feature">
-        <core-item icon="developer-mode-tv" label="Real Products"></core-item>
-        <div class="desc">Submit to the App Store, acquire actual users, and blog/tweet about your progress.</div>
-      </div>
-      
-      <div class="feature">
-        <core-item icon="work" label="Open Source"></core-item>
-        <div class="desc">Developed by technology experts and proven entrepreneurs from all over the world.</div>
-      </div>
-      
-      <div class="feature">
-        <core-item icon="shopping-cart" label="Continuous Learning"></core-item>
-        
-        <div class="desc">Learn to keep up with the fast pace of an information-driven world long after you finish.</div>
-      
+        <div class="row">
+          <div class="col-sm-12 col-md-4 item">
+            <core-item icon="developer-mode-tv" label="Mentor Supported"></core-item>
+            <div class="desc">Be introduced to experts and start building a lifelong network of industry contacts.</div>
+          </div>
+          <div class="col-sm-12 col-md-4 item">
+            <div><core-item icon="work" label="Project Driven"></core-item></div>
+            <div class="desc">No tests and no exams. You are judged on the quality of the apps you build.</div>
+          </div>
+          <div class="col-sm-12 col-md-4 item">
+            <core-item icon="shopping-cart" label="University Affiliated"></core-item>
+            <div class="desc">You'll receive credit from the Shannon School of Business at Cape Breton University.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 item">
+            <core-item icon="developer-mode-tv" label="Real Products"></core-item>
+            <div class="desc">Submit to the App Store, acquire actual users, and blog/tweet about your progress.</div>
+          </div>
+          <div class="col-sm-12 col-md-4 item">
+            <core-item icon="work" label="Open Source"></core-item>
+            <div class="desc">Developed by technology experts and proven entrepreneurs from all over the world.</div>
+          </div>
+          <div class="col-sm-12 col-md-4 item">
+            <core-item icon="shopping-cart" label="Continuous Learning"></core-item>
+            <div class="desc">Learn to keep up with the fast pace of an information-driven world long after you finish.</div>
+          </div>
+        </div>
       </div>
     </div>
 
 
- 
-  
-    
 
+
+
+  
     <div class="container-fluid" id="newsletter_bg">
       <div id="newsletter">
-
-        <div id="when">Signup for the UIT Newsletter</div>
+        <a href="/apply">
+          <button class="btn btn-default" style="background-color:#2f3f41;">APPLY NOW</button>
+        </a>
+        <div>
+          <h4>-or-</h4>
+        </div>
+        <h2>Get program updates by email</h2>
         <div id="mc_embed_signup">
           <form action="//uitstartup.us8.list-manage.com/subscribe/post?u=2a43a7c7a0e4f0012a022387a&amp;id=91ceeb974c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" role="form" novalidate>
             <div class="form-group">
@@ -179,9 +179,12 @@
           </form>
         </div>
       </div>
-    </div>
+    </div>  
+     
 
-    <div class="footer">
+      
+    
+          <div class="footer">
       <div class="container" id="footer">
         <div id="copyright">© 2014 UIT. All rights reserved.</div>
         <div id="social_icons">
@@ -190,6 +193,11 @@
         </div>
       </div>
     </div>
+    
+
+
+
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet" type="text/css">
 
 <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

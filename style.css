@@ -7,9 +7,43 @@ green
 #9fcb3e
 
 */
+.desc {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  font-weight: 300;
+  color: #f6fef3;
+}
+
+core-item {
+  color: #f6fef3;
+  font-size: 21pt;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+core-toolbar  {
+  background-color: transparent;
+}
+
+[main] {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/head_bg.png');
+}
+
+[drawer] {
+  background-image: url('images/bg_repeating.png');
+} 
+
+/*Menu Icon*/
+
+core-icon-button {
+  color: #2f3f41;
+}
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
 
@@ -146,6 +180,8 @@ core.header-panel[mode=cover]::shadow #mainContainer {
 
 /* HOME */
 
+
+
 #head_bg {
   /*height:643px;*/
   background:url('images/head_bg.png') repeat;
@@ -168,7 +204,7 @@ core.header-panel[mode=cover]::shadow #mainContainer {
 }
 
 #logo {
-  margin-bottom:33px;
+  margin-top:1px;
 }
 
 #description {
@@ -177,7 +213,7 @@ core.header-panel[mode=cover]::shadow #mainContainer {
 
 #when {
   text-align:center;
-  margin:10px auto;
+  margin:1px auto;
   max-width:661px;
   font-size:26pt;
   color:#808284;
