@@ -95,7 +95,7 @@ core.header-panel[mode=cover]::shadow #mainContainer {
 #login_bg {
   margin:0px auto;
   width:352px; height:409px;
-  background:url('images/login_bg.png') no-repeat;
+  background-image: url('images/bg_repeating.png');
   padding:33px;
 }
 
